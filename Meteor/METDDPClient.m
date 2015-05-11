@@ -21,7 +21,9 @@
 #import "METDDPClient.h"
 #import "METDDPClient_Internal.h"
 
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
+#endif
 
 #import "METDDPConnection.h"
 #import "METRetryStrategy.h"
@@ -63,7 +65,9 @@ NSString * const METDDPClientDidChangeAccountNotification = @"METDDPClientDidCha
   METTimer *_connectionRetryTimer;
   NSUInteger _numberOfConnectionRetryAttempts;
   METNetworkReachabilityManager *_networkReachabilityManager;
+#if TARGET_OS_IPHONE
   UIBackgroundTaskIdentifier _keepAliveBackgroundTask;
+#endif
   
   NSString *_sessionID;
   
@@ -108,9 +112,10 @@ NSString * const METDDPClientDidChangeAccountNotification = @"METDDPClientDidCha
     _networkReachabilityManager.delegate = self;
     _networkReachabilityManager.delegateQueue = _queue;
     [_networkReachabilityManager startMonitoring];
-    
+
+#if TARGET_OS_IPHONE
     _keepAliveBackgroundTask = UIBackgroundTaskInvalid;
-    
+#endif
     _supportedProtocolVersions = @[@"1", @"pre2", @"pre1"];
     _suggestedProtocolVersion = @"1";
     
@@ -122,9 +127,11 @@ NSString * const METDDPClientDidChangeAccountNotification = @"METDDPClientDidCha
     _subscriptionManager.defaultNotInUseTimeout = 180;
     
     _methodInvocationCoordinator = [[METMethodInvocationCoordinator alloc] initWithClient:self];
-    
+
+#if TARGET_OS_IPHONE
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillEnterForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
+#endif
   }
   return self;
 }
@@ -140,20 +147,24 @@ NSString * const METDDPClientDidChangeAccountNotification = @"METDDPClientDidCha
 #pragma mark - Application State Notifications
 
 - (void)applicationDidEnterBackground:(NSNotification *)notification {
+#if TARGET_OS_IPHONE
   _keepAliveBackgroundTask = [[UIApplication sharedApplication] beginBackgroundTaskWithName:@"com.meteor.keep-alive" expirationHandler:^{
     _keepAliveBackgroundTask = UIBackgroundTaskInvalid;
     [self disconnect];
   }];
+#endif
 }
 
 - (void)applicationWillEnterForeground:(NSNotification *)notification {
+#if TARGET_OS_IPHONE
   if (_keepAliveBackgroundTask != UIBackgroundTaskInvalid) {
     [[UIApplication sharedApplication] endBackgroundTask:_keepAliveBackgroundTask];
     _keepAliveBackgroundTask = UIBackgroundTaskInvalid;
   }
-  
   [self connect];
+#endif
 }
+
 
 #pragma mark - Connecting
 
@@ -263,7 +274,11 @@ NSString * const METDDPClientDidChangeAccountNotification = @"METDDPClientDidCha
 
 - (void)networkReachabilityManager:(METNetworkReachabilityManager *)reachabilityManager didDetectReachabilityStatusChange:(METNetworkReachabilityStatus)reachabilityStatus {
   
-  if (reachabilityStatus == METNetworkReachabilityStatusReachable && [UIApplication sharedApplication].applicationState != UIApplicationStateBackground) {
+  if (reachabilityStatus == METNetworkReachabilityStatusReachable
+#if TARGET_OS_IPHONE
+      && [UIApplication sharedApplication].applicationState != UIApplicationStateBackground
+#endif
+      ) {
     [self connect];
   }
 }
@@ -600,7 +615,7 @@ NSString * const METDDPClientDidChangeAccountNotification = @"METDDPClientDidCha
   id result = message[@"result"];
   NSDictionary *errorResponse = message[@"error"];
   NSError *error = errorResponse ? [self errorWithErrorResponse:errorResponse] : nil;
-  
+
   [_methodInvocationCoordinator didReceiveResult:result error:error forMethodID:methodID];
 }
 

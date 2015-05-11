@@ -31,7 +31,7 @@
 @property (assign, nonatomic, readonly) NSTimeInterval timeoutInterval;
 
 @property (weak, nonatomic) id<METDDPConnectionDelegate> delegate;
-@property (strong, nonatomic) dispatch_queue_t delegateQueue;
+@property (assign, nonatomic) dispatch_queue_t delegateQueue;
 
 - (void)open;
 - (void)close;

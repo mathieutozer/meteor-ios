@@ -1,7 +1,7 @@
 {
   "name": "Meteor",
   "version": "0.1.2",
-  "summary": "Meteor for iOS.",
+  "summary": "Meteor for iOS and OS X.",
   "description": "    Meteor for iOS is a DDP client with support for latency compensation and Core Data integration.\n",
   "license": {
     "type": "MIT",
@@ -16,7 +16,8 @@
     "tag": "0.1.2"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "7.0",
+    "osx": "10.10"
   },
   "requires_arc": true,
   "source_files": "Meteor/**/*.{h,m}",
@@ -27,9 +28,6 @@
 
     ],
     "InflectorKit": [
-
-    ],
-    "SimpleKeychain": [
 
     ]
   }
