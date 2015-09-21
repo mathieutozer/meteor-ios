@@ -1,6 +1,6 @@
 # Meteor iOS
 
-Meteor iOS aims to be an easy way to integrate native iOS apps with a Meteor server through DDP, while supporting many of the principles that make Meteor such a great platform. It has been written in Objective-C, but is also perfectly usable from Swift.
+Meteor iOS integrates native iOS apps with the Meteor platform (http://www.meteor.com) through DDP. It offers full support for latency compensation and supports a Core Data programming model. It has been written in Objective-C, but is also perfectly usable from Swift.
 
 *If you're a Meteor web developer…* it's now easy for a native iOS app to participate in Meteor's full stack reactivity.
 
@@ -10,7 +10,7 @@ Meteor iOS aims to be an easy way to integrate native iOS apps with a Meteor ser
 
 Meteor iOS is more than a barebones DDP client. Rather than notifying you of individual data updates and leaving it at that, it has been designed to bring full stack reativity to iOS. Currently, this is most easily done by integrating with Core Data. By only writing a few lines of code, we get reactive updates from the database to the UI.
 
-Among other things, it includes full support for latency compensation and supports writing your own method stubs. It has been implemented with concurrent execution in mind and keeps all processing off the main thread, posting batched and consolidated change notifications that can be observed to update the UI. 
+Among other things, it includes full support for latency compensation and supports writing your own method stubs. It has been implemented with concurrent execution in mind and keeps all processing off the main thread, posting batched and consolidated change notifications that can be observed to update the UI.
 
 It keeps as close as possible to the semantics of the original Meteor JavaScript code. It's behavior is covered by over 200 unit tests and it also has some server integration tests that run using a local Meteor test server.
 
@@ -18,7 +18,7 @@ It keeps as close as possible to the semantics of the original Meteor JavaScript
 
 For now, the included Todos example (written in Swift, for both iPhone and iPad) is probably the best way to get an understanding of what Meteor iOS is capable of. If you want to try it out, you should be able to open the Meteor workspace and run the Todos scheme. It connects to a Meteor example app running at http://meteor-ios-todos.meteor.com. If you want to get a quick idea of what it's capable of you may want to have a look at this short screen recording:
 
-[![Meteor iOS — Todos example](http://img.youtube.com/vi/qWJ2bgg8xxo/0.jpg)](http://www.youtube.com/watch?v=qWJ2bgg8xxo) 
+[![Meteor iOS — Todos example](http://img.youtube.com/vi/qWJ2bgg8xxo/0.jpg)](http://www.youtube.com/watch?v=qWJ2bgg8xxo)
 
 ## Installation with CocoaPods
 
@@ -28,7 +28,7 @@ To use CocoaPods with Swift, you'll have to install [CocoaPods 0.36 or later](ht
 ```
 platform :ios, '8.0'
 use_frameworks!
-pod 'Meteor' 
+pod 'Meteor'
 ```
 
 With this Podfile, Meteor iOS will be built as a framework and can easily be imported without further configuration (you may need to build the project first before the module is recognized however):

@@ -27,6 +27,8 @@
 @protocol METDDPClientDelegate;
 @class METAccount;
 
+NS_ASSUME_NONNULL_BEGIN
+
 extern NSString * const METDDPErrorDomain;
 typedef NS_ENUM(NSInteger, METDDPErrorType) {
   METDDPServerError = 0,
@@ -44,42 +46,73 @@ typedef NS_ENUM(NSInteger, METDDPConnectionStatus) {
 extern NSString * const METDDPClientDidChangeConnectionStatusNotification;
 extern NSString * const METDDPClientDidChangeAccountNotification;
 
-typedef id (^METMethodStub)(NSArray *parameters);
-typedef void (^METMethodCompletionHandler)(id result, NSError *error);
+typedef id __nullable (^METMethodStub)(NSArray *parameters);
+typedef void (^METMethodCompletionHandler)(id __nullable result, NSError * __nullable error);
 
-typedef void (^METLogInCompletionHandler)(NSError *error);
-typedef void (^METLogOutCompletionHandler)(NSError *error);
+typedef void (^METLogInCompletionHandler)(NSError * __nullable error);
+typedef void (^METLogOutCompletionHandler)(NSError * __nullable error);
 
+/*!
+ A `METDDPClient` object acts as the main entry point into Meteor iOS.
+ */
 @interface METDDPClient : NSObject
 
-- (instancetype)initWithConnection:(METDDPConnection *)connection;
+#pragma mark - Initialization
+/// @name Initializing a METDDPClient Object
+
+- (instancetype)initWithConnection:(nullable METDDPConnection *)connection;
 - (instancetype)initWithServerURL:(NSURL *)serverURL;
 
-@property(weak, nonatomic) id<METDDPClientDelegate> delegate;
+#pragma mark - Delegate
+/// @name Managing the Delegate
+
+@property (nullable, weak, nonatomic) id<METDDPClientDelegate> delegate;
+
+#pragma mark - Connection
+/// @name Accessing Connection Status
+
+@property (nullable, strong, nonatomic, readonly) NSURL *serverURL;
+@property (assign, nonatomic, readonly, getter=isConnected) BOOL connected;
+@property (assign, nonatomic, readonly) METDDPConnectionStatus connectionStatus;
+
+/// @name Managing the Connection
 
 - (void)connect;
 - (void)disconnect;
 
-@property (strong, nonatomic, readonly) NSURL *serverURL;
-@property (assign, nonatomic, readonly, getter=isConnected) BOOL connected;
-@property (assign, nonatomic, readonly) METDDPConnectionStatus connectionStatus;
+#pragma mark - Database
+/// @name Accessing the Database
 
 @property (strong, nonatomic, readonly) METDatabase *database;
 
+#pragma mark - Subscriptions
+/// @name Managing Subscriptions
+
 - (METSubscription *)addSubscriptionWithName:(NSString *)name;
-- (METSubscription *)addSubscriptionWithName:(NSString *)name completionHandler:(METSubscriptionCompletionHandler)completionHandler;
-- (METSubscription *)addSubscriptionWithName:(NSString *)name parameters:(NSArray *)parameters;
-- (METSubscription *)addSubscriptionWithName:(NSString *)name parameters:(NSArray *)parameters completionHandler:(METSubscriptionCompletionHandler)completionHandler;
+- (METSubscription *)addSubscriptionWithName:(NSString *)name completionHandler:(nullable METSubscriptionCompletionHandler)completionHandler;
+- (METSubscription *)addSubscriptionWithName:(NSString *)name parameters:(nullable NSArray *)parameters;
+- (METSubscription *)addSubscriptionWithName:(NSString *)name parameters:(nullable NSArray *)parameters completionHandler:(nullable METSubscriptionCompletionHandler)completionHandler;
 - (void)removeSubscription:(METSubscription *)subscription;
 
+#pragma mark - Method Invocations
+/// @name Defining Method Stubs
+
 - (void)defineStubForMethodWithName:(NSString *)methodName usingBlock:(METMethodStub)block;
-- (id)callMethodWithName:(NSString *)methodName parameters:(NSArray *)parameters completionHandler:(METMethodCompletionHandler)completionHandler;
-- (id)callMethodWithName:(NSString *)methodName parameters:(NSArray *)parameters;
+
+/// @name Performing Method Invocations
+
+- (nullable id)callMethodWithName:(NSString *)methodName parameters:(nullable NSArray *)parameters completionHandler:(nullable METMethodCompletionHandler)completionHandler;
+- (nullable id)callMethodWithName:(NSString *)methodName parameters:(nullable NSArray *)parameters;
+
+#pragma mark - Accounts
+/// @name Accessing Account Status
 
 @property (assign, nonatomic, readonly, getter=isLoggingIn) BOOL loggingIn;
-@property (copy, nonatomic, readonly) NSString *userID;
+@property (nullable, copy, nonatomic, readonly) NSString *userID;
 
-- (void)logoutWithCompletionHandler:(METLogOutCompletionHandler)completionHandler;
+/// @name Logging Out
+
+- (void)logoutWithCompletionHandler:(nullable METLogOutCompletionHandler)completionHandler;
 
 @end
 
@@ -91,3 +124,5 @@ typedef void (^METLogOutCompletionHandler)(NSError *error);
 - (void)client:(METDDPClient *)client didFailWithError:(NSError *)error;
 
 @end
+
+NS_ASSUME_NONNULL_END

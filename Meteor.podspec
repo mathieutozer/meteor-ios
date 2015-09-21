@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "Meteor"
-  s.version      = "0.1.2"
+  s.version      = File.read('VERSION')
   s.summary      = "Meteor for iOS and OS X."
   s.description  = <<-DESC
-    Meteor for iOS is a DDP client with support for latency compensation and Core Data integration.
+    Meteor iOS integrates native iOS apps with the Meteor platform through DDP.
     DESC
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = "https://github.com/martijnwalraven/meteor-ios"
@@ -16,9 +16,10 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Meteor/**/*.{h,m}'
 
-  s.public_header_files = 'Meteor/{METDDPClient,METSubscription,METDatabase,METCollection,METDocument,METDocumentKey,METDatabaseChanges,METDocumentChangeDetails,METAccount,METDDPClient+AccountsPassword,METCoreDataDDPClient,METIncrementalStore}.h'
+  s.public_header_files = `./Scripts/find_headers.rb --project Meteor --target "Meteor iOS" --public`.split("\n")
+  s.private_header_files = `./Scripts/find_headers.rb --project Meteor --target "Meteor iOS" --private`.split("\n")
 
-  s.framework = 'CoreData'
+	s.frameworks = 'CoreData'
 
   s.dependency 'PocketSocket'
   s.dependency 'InflectorKit'

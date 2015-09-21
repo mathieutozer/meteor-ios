@@ -5,11 +5,12 @@ use_frameworks!
 workspace 'Meteor'
 
 xcodeproj 'Meteor'
-link_with ['Meteor', 'UnitTests', 'ServerIntegrationTests']
 
 podspec
 
-target 'UnitTests' do
+link_with ['Meteor', 'Server Integration Tests']
+
+target 'Unit Tests' do
   pod 'OCMock'
 end
 

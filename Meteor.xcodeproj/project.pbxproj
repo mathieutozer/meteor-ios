@@ -6,8 +6,27 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9F1EEB8C1B0357AF00402BFB /* API Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9F1EEB8D1B0357AF00402BFB /* Build configuration list for PBXAggregateTarget "API Documentation" */;
+			buildPhases = (
+				9F1EEB901B0357B800402BFB /* Build API Documentation */,
+			);
+			dependencies = (
+			);
+			name = "API Documentation";
+			productName = "API Documentation";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		54058539AFED47AF304A6776 /* (null) in Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Required, ); }; };
+		7CBF1A581B18FF3C00967AEE /* InflectorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A551B18FF3C00967AEE /* InflectorKit.framework */; };
+		7CBF1A591B18FF3C00967AEE /* PocketSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A561B18FF3C00967AEE /* PocketSocket.framework */; };
+		7CBF1A5A1B18FF3C00967AEE /* SimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A571B18FF3C00967AEE /* SimpleKeychain.framework */; };
+		7CBF1A5C1B18FFAA00967AEE /* InflectorKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A551B18FF3C00967AEE /* InflectorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7CBF1A5D1B18FFAA00967AEE /* PocketSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A561B18FF3C00967AEE /* PocketSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7CBF1A5E1B18FFAA00967AEE /* SimpleKeychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A571B18FF3C00967AEE /* SimpleKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F030F591AE3E98F00BCC4C8 /* METAleaRandomValueGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F030F3B1AE3E98F00BCC4C8 /* METAleaRandomValueGeneratorTests.m */; };
 		9F030F5A1AE3E98F00BCC4C8 /* METCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F030F3C1AE3E98F00BCC4C8 /* METCollectionTests.m */; };
 		9F030F5B1AE3E98F00BCC4C8 /* METCoreDataDDPClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F030F3D1AE3E98F00BCC4C8 /* METCoreDataDDPClientTests.m */; };
@@ -39,6 +58,20 @@
 		9F030F7C1AE3E9A800BCC4C8 /* METDocumentIDGenerationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F030F761AE3E9A800BCC4C8 /* METDocumentIDGenerationTests.m */; };
 		9F030F7D1AE3E9A800BCC4C8 /* METServerIntegrationTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F030F781AE3E9A800BCC4C8 /* METServerIntegrationTestCase.m */; };
 		9F030F7E1AE3E9A800BCC4C8 /* METSubscriptionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F030F791AE3E9A800BCC4C8 /* METSubscriptionsTests.m */; };
+		9F2A960B1B199E5900DE99CC /* InflectorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A551B18FF3C00967AEE /* InflectorKit.framework */; };
+		9F2A960C1B199E5900DE99CC /* PocketSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A561B18FF3C00967AEE /* PocketSocket.framework */; };
+		9F2A960D1B199E5900DE99CC /* SimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A571B18FF3C00967AEE /* SimpleKeychain.framework */; };
+		9F2A960E1B199E5A00DE99CC /* InflectorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A551B18FF3C00967AEE /* InflectorKit.framework */; };
+		9F2A960F1B199E5A00DE99CC /* PocketSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A561B18FF3C00967AEE /* PocketSocket.framework */; };
+		9F2A96101B199E5A00DE99CC /* SimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBF1A571B18FF3C00967AEE /* SimpleKeychain.framework */; };
+		9F2A96121B19A7F100DE99CC /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2A96111B19A7F100DE99CC /* OCMock.framework */; };
+		9F2A96141B19AC2D00DE99CC /* OCMock.framework in Copy Dependencies */ = {isa = PBXBuildFile; fileRef = 9F2A96111B19A7F100DE99CC /* OCMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F2A96151B19AC2D00DE99CC /* InflectorKit.framework in Copy Dependencies */ = {isa = PBXBuildFile; fileRef = 7CBF1A551B18FF3C00967AEE /* InflectorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F2A96161B19AC2D00DE99CC /* PocketSocket.framework in Copy Dependencies */ = {isa = PBXBuildFile; fileRef = 7CBF1A561B18FF3C00967AEE /* PocketSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F2A96171B19AC2D00DE99CC /* SimpleKeychain.framework in Copy Dependencies */ = {isa = PBXBuildFile; fileRef = 7CBF1A571B18FF3C00967AEE /* SimpleKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F2A96191B19AC7E00DE99CC /* InflectorKit.framework in Copy Dependencies */ = {isa = PBXBuildFile; fileRef = 7CBF1A551B18FF3C00967AEE /* InflectorKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F2A961A1B19AC7E00DE99CC /* PocketSocket.framework in Copy Dependencies */ = {isa = PBXBuildFile; fileRef = 7CBF1A561B18FF3C00967AEE /* PocketSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F2A961B1B19AC7E00DE99CC /* SimpleKeychain.framework in Copy Dependencies */ = {isa = PBXBuildFile; fileRef = 7CBF1A571B18FF3C00967AEE /* SimpleKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F2F63D11AE3EBC1005E98DA /* MockMETDDPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F63CA1AE3EBC1005E98DA /* MockMETDDPConnection.m */; };
 		9F2F63D21AE3EBC1005E98DA /* MockMETDDPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F63CA1AE3EBC1005E98DA /* MockMETDDPConnection.m */; };
 		9F2F63D31AE3EBC1005E98DA /* XCTAsyncTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F63CC1AE3EBC1005E98DA /* XCTAsyncTestCase.m */; };
@@ -129,10 +162,6 @@
 		9FAB38F71AE3E88200E99519 /* NSString+METAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAB38AA1AE3E88200E99519 /* NSString+METAdditions.m */; };
 		9FAB39121AE3E8D700E99519 /* Meteor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAB38421AE3E76900E99519 /* Meteor.framework */; };
 		9FFE08571AE41E5900416683 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA46E671AE417AE00598B70 /* CoreData.framework */; };
-		C6BF9614B5160B885D3CD21B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAF32956E29E875A818A07B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		CC015DD348758369AFF8AC92 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAF32956E29E875A818A07B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		E12618F1C84AB0157A1AB0AB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BAF32956E29E875A818A07B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		FA007F35F13A6F5E368C11AF /* Pods_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E20B947D467ABDF49253D9E /* Pods_UnitTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,11 +181,53 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7CBF1A5B1B18FF9800967AEE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7CBF1A5C1B18FFAA00967AEE /* InflectorKit.framework in Embed Frameworks */,
+				7CBF1A5D1B18FFAA00967AEE /* PocketSocket.framework in Embed Frameworks */,
+				7CBF1A5E1B18FFAA00967AEE /* SimpleKeychain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2A96131B19AC1700DE99CC /* Copy Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F2A96141B19AC2D00DE99CC /* OCMock.framework in Copy Dependencies */,
+				9F2A96151B19AC2D00DE99CC /* InflectorKit.framework in Copy Dependencies */,
+				9F2A96161B19AC2D00DE99CC /* PocketSocket.framework in Copy Dependencies */,
+				9F2A96171B19AC2D00DE99CC /* SimpleKeychain.framework in Copy Dependencies */,
+			);
+			name = "Copy Dependencies";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F2A96181B19AC6E00DE99CC /* Copy Dependencies */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F2A96191B19AC7E00DE99CC /* InflectorKit.framework in Copy Dependencies */,
+				9F2A961A1B19AC7E00DE99CC /* PocketSocket.framework in Copy Dependencies */,
+				9F2A961B1B19AC7E00DE99CC /* SimpleKeychain.framework in Copy Dependencies */,
+			);
+			name = "Copy Dependencies";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2BAF32956E29E875A818A07B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E20B947D467ABDF49253D9E /* Pods_UnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		680F33B23EA3DFB57556B9E1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		93A9AB9B9A1C2A6DD78B761B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7CBF1A551B18FF3C00967AEE /* InflectorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InflectorKit.framework; path = Carthage/Build/iOS/InflectorKit.framework; sourceTree = "<group>"; };
+		7CBF1A561B18FF3C00967AEE /* PocketSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PocketSocket.framework; path = Carthage/Build/iOS/PocketSocket.framework; sourceTree = "<group>"; };
+		7CBF1A571B18FF3C00967AEE /* SimpleKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleKeychain.framework; path = Carthage/Build/iOS/SimpleKeychain.framework; sourceTree = "<group>"; };
 		9F030F3B1AE3E98F00BCC4C8 /* METAleaRandomValueGeneratorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METAleaRandomValueGeneratorTests.m; sourceTree = "<group>"; };
 		9F030F3C1AE3E98F00BCC4C8 /* METCollectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METCollectionTests.m; sourceTree = "<group>"; };
 		9F030F3D1AE3E98F00BCC4C8 /* METCoreDataDDPClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METCoreDataDDPClientTests.m; sourceTree = "<group>"; };
@@ -190,6 +261,7 @@
 		9F030F771AE3E9A800BCC4C8 /* METServerIntegrationTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = METServerIntegrationTestCase.h; sourceTree = "<group>"; };
 		9F030F781AE3E9A800BCC4C8 /* METServerIntegrationTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METServerIntegrationTestCase.m; sourceTree = "<group>"; };
 		9F030F791AE3E9A800BCC4C8 /* METSubscriptionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = METSubscriptionsTests.m; sourceTree = "<group>"; };
+		9F2A96111B19A7F100DE99CC /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
 		9F2F63C91AE3EBC1005E98DA /* MockMETDDPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockMETDDPConnection.h; sourceTree = "<group>"; };
 		9F2F63CA1AE3EBC1005E98DA /* MockMETDDPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockMETDDPConnection.m; sourceTree = "<group>"; };
 		9F2F63CB1AE3EBC1005E98DA /* XCTAsyncTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTAsyncTestCase.h; sourceTree = "<group>"; };
@@ -279,12 +351,10 @@
 		9FAB38A81AE3E88200E99519 /* NSDictionary+METAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+METAdditions.m"; sourceTree = "<group>"; };
 		9FAB38A91AE3E88200E99519 /* NSString+METAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+METAdditions.h"; sourceTree = "<group>"; };
 		9FAB38AA1AE3E88200E99519 /* NSString+METAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+METAdditions.m"; sourceTree = "<group>"; };
-		9FAB38FC1AE3E8C000E99519 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAB38FC1AE3E8C000E99519 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAB38FF1AE3E8C000E99519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FAB390C1AE3E8D700E99519 /* ServerIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServerIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAB390C1AE3E8D700E99519 /* Server Integration Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Server Integration Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAB390F1AE3E8D700E99519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FC184851AE6A67100DEFBE7 /* Pods-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9FC184861AE6A67100DEFBE7 /* Pods-UnitTests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,7 +362,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BF9614B5160B885D3CD21B /* Pods.framework in Frameworks */,
+				7CBF1A581B18FF3C00967AEE /* InflectorKit.framework in Frameworks */,
+				7CBF1A591B18FF3C00967AEE /* PocketSocket.framework in Frameworks */,
+				7CBF1A5A1B18FF3C00967AEE /* SimpleKeychain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +374,10 @@
 			files = (
 				9FFE08571AE41E5900416683 /* CoreData.framework in Frameworks */,
 				9F90ED321AE41A1700D7BF84 /* Meteor.framework in Frameworks */,
-				CC015DD348758369AFF8AC92 /* Pods.framework in Frameworks */,
-				FA007F35F13A6F5E368C11AF /* Pods_UnitTests.framework in Frameworks */,
+				9F2A960C1B199E5900DE99CC /* PocketSocket.framework in Frameworks */,
+				9F2A960B1B199E5900DE99CC /* InflectorKit.framework in Frameworks */,
+				9F2A960D1B199E5900DE99CC /* SimpleKeychain.framework in Frameworks */,
+				9F2A96121B19A7F100DE99CC /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +385,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2A960E1B199E5A00DE99CC /* InflectorKit.framework in Frameworks */,
+				9F2A960F1B199E5A00DE99CC /* PocketSocket.framework in Frameworks */,
+				9F2A96101B199E5A00DE99CC /* SimpleKeychain.framework in Frameworks */,
 				9FAB39121AE3E8D700E99519 /* Meteor.framework in Frameworks */,
-				54058539AFED47AF304A6776 /* (null) in Frameworks */,
-				E12618F1C84AB0157A1AB0AB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,8 +398,8 @@
 		9F030F391AE3E93300BCC4C8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9FAB38FD1AE3E8C000E99519 /* UnitTests */,
-				9FAB390D1AE3E8D700E99519 /* ServerIntegrationTests */,
+				9FAB38FD1AE3E8C000E99519 /* Unit Tests */,
+				9FAB390D1AE3E8D700E99519 /* Server Integration Tests */,
 				9F2F63C81AE3EBC1005E98DA /* Shared */,
 				9F2F63D91AE3EBCE005E98DA /* Fixtures */,
 			);
@@ -562,7 +637,6 @@
 				9F030F391AE3E93300BCC4C8 /* Tests */,
 				9FAB38431AE3E76900E99519 /* Products */,
 				CD177ED33A653A70E94323B2 /* Frameworks */,
-				C70BFF2B49E8D0340F0752BD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -570,8 +644,8 @@
 			isa = PBXGroup;
 			children = (
 				9FAB38421AE3E76900E99519 /* Meteor.framework */,
-				9FAB38FC1AE3E8C000E99519 /* UnitTests.xctest */,
-				9FAB390C1AE3E8D700E99519 /* ServerIntegrationTests.xctest */,
+				9FAB38FC1AE3E8C000E99519 /* Unit Tests.xctest */,
+				9FAB390C1AE3E8D700E99519 /* Server Integration Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -609,7 +683,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9FAB38FD1AE3E8C000E99519 /* UnitTests */ = {
+		9FAB38FD1AE3E8C000E99519 /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
 				9F030F461AE3E98F00BCC4C8 /* METDDPClientTestCase.h */,
@@ -628,7 +702,7 @@
 				9F0604E11AE659F40054B5EF /* Utility */,
 				9FAB38FE1AE3E8C000E99519 /* Supporting Files */,
 			);
-			path = UnitTests;
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
 		9FAB38FE1AE3E8C000E99519 /* Supporting Files */ = {
@@ -639,7 +713,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9FAB390D1AE3E8D700E99519 /* ServerIntegrationTests */ = {
+		9FAB390D1AE3E8D700E99519 /* Server Integration Tests */ = {
 			isa = PBXGroup;
 			children = (
 				9F030F741AE3E9A800BCC4C8 /* METAccountsTests.m */,
@@ -650,7 +724,7 @@
 				9F030F791AE3E9A800BCC4C8 /* METSubscriptionsTests.m */,
 				9FAB390E1AE3E8D700E99519 /* Supporting Files */,
 			);
-			path = ServerIntegrationTests;
+			path = "Server Integration Tests";
 			sourceTree = "<group>";
 		};
 		9FAB390E1AE3E8D700E99519 /* Supporting Files */ = {
@@ -661,23 +735,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C70BFF2B49E8D0340F0752BD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				680F33B23EA3DFB57556B9E1 /* Pods.debug.xcconfig */,
-				93A9AB9B9A1C2A6DD78B761B /* Pods.release.xcconfig */,
-				9FC184851AE6A67100DEFBE7 /* Pods-UnitTests.debug.xcconfig */,
-				9FC184861AE6A67100DEFBE7 /* Pods-UnitTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CD177ED33A653A70E94323B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F2A96111B19A7F100DE99CC /* OCMock.framework */,
+				7CBF1A551B18FF3C00967AEE /* InflectorKit.framework */,
+				7CBF1A561B18FF3C00967AEE /* PocketSocket.framework */,
+				7CBF1A571B18FF3C00967AEE /* SimpleKeychain.framework */,
 				9FA46E671AE417AE00598B70 /* CoreData.framework */,
-				2BAF32956E29E875A818A07B /* Pods.framework */,
-				5E20B947D467ABDF49253D9E /* Pods_UnitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -701,10 +766,12 @@
 				9FAB38BA1AE3E88200E99519 /* METDatabaseChanges.h in Headers */,
 				9FAB38CD1AE3E88200E99519 /* METDocumentChangeDetails.h in Headers */,
 				9FAB38B41AE3E88200E99519 /* METCoreDataDDPClient.h in Headers */,
+				9FAB38D91AE3E88200E99519 /* METIncrementalStore.h in Headers */,
 				9FAB38F61AE3E88200E99519 /* NSString+METAdditions.h in Headers */,
+				9FAB38BE1AE3E88200E99519 /* METDDPClient_Internal.h in Headers */,
+				9FAB38B61AE3E88200E99519 /* METDatabase_Internal.h in Headers */,
 				9FAB38DB1AE3E88200E99519 /* METMethodInvocation_Internal.h in Headers */,
 				9FAB38D81AE3E88200E99519 /* METIncrementalStore_Testing.h in Headers */,
-				9FAB38B61AE3E88200E99519 /* METDatabase_Internal.h in Headers */,
 				9FAB38E01AE3E88200E99519 /* METMethodInvocationCoordinator_Testing.h in Headers */,
 				9FAB38F01AE3E88200E99519 /* METTimer.h in Headers */,
 				9FAB38EE1AE3E88200E99519 /* METSubscriptionManager.h in Headers */,
@@ -726,79 +793,72 @@
 				9FAB38E71AE3E88200E99519 /* METRandomValueGenerator.h in Headers */,
 				9FAB38D31AE3E88200E99519 /* METEJSONSerialization.h in Headers */,
 				9FAB38D11AE3E88200E99519 /* METDynamicVariable.h in Headers */,
-				9FAB38BE1AE3E88200E99519 /* METDDPClient_Internal.h in Headers */,
 				9FAB38B11AE3E88200E99519 /* METCollection_Internal.h in Headers */,
 				9FAB38EB1AE3E88200E99519 /* METSubscription_Internal.h in Headers */,
 				9FAB38F21AE3E88200E99519 /* NSArray+METAdditions.h in Headers */,
 				9FAB38F41AE3E88200E99519 /* NSDictionary+METAdditions.h in Headers */,
-				9FAB38D91AE3E88200E99519 /* METIncrementalStore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9FAB38411AE3E76900E99519 /* Meteor */ = {
+		9FAB38411AE3E76900E99519 /* Meteor iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FAB38581AE3E76900E99519 /* Build configuration list for PBXNativeTarget "Meteor" */;
+			buildConfigurationList = 9FAB38581AE3E76900E99519 /* Build configuration list for PBXNativeTarget "Meteor iOS" */;
 			buildPhases = (
-				D1A51D8417412F6B45A9A2AB /* Check Pods Manifest.lock */,
+				9F2A9D761B2C9313002DD57A /* Set Version */,
 				9FAB383D1AE3E76900E99519 /* Sources */,
 				9FAB383E1AE3E76900E99519 /* Frameworks */,
 				9FAB383F1AE3E76900E99519 /* Headers */,
 				9FAB38401AE3E76900E99519 /* Resources */,
-				1F3E0CABFE406D499D7523B5 /* Copy Pods Resources */,
-				9426F64E402A1C276882DB88 /* Embed Pods Frameworks */,
+				7CBF1A5B1B18FF9800967AEE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Meteor;
+			name = "Meteor iOS";
 			productName = Meteor;
 			productReference = 9FAB38421AE3E76900E99519 /* Meteor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9FAB38FB1AE3E8C000E99519 /* UnitTests */ = {
+		9FAB38FB1AE3E8C000E99519 /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FAB39051AE3E8C000E99519 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildConfigurationList = 9FAB39051AE3E8C000E99519 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
-				558FDDDA1FAE7BF4904AE20E /* Check Pods Manifest.lock */,
 				9FAB38F81AE3E8C000E99519 /* Sources */,
 				9FAB38F91AE3E8C000E99519 /* Frameworks */,
 				9FAB38FA1AE3E8C000E99519 /* Resources */,
-				7A0C207428B39C72D0D54552 /* Copy Pods Resources */,
-				1CBDB950EF6567F9B6EF0C4A /* Embed Pods Frameworks */,
+				9F2A96131B19AC1700DE99CC /* Copy Dependencies */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				9FAB39041AE3E8C000E99519 /* PBXTargetDependency */,
 			);
-			name = UnitTests;
+			name = "Unit Tests";
 			productName = MeteorUnitTests;
-			productReference = 9FAB38FC1AE3E8C000E99519 /* UnitTests.xctest */;
+			productReference = 9FAB38FC1AE3E8C000E99519 /* Unit Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9FAB390B1AE3E8D700E99519 /* ServerIntegrationTests */ = {
+		9FAB390B1AE3E8D700E99519 /* Server Integration Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FAB39151AE3E8D700E99519 /* Build configuration list for PBXNativeTarget "ServerIntegrationTests" */;
+			buildConfigurationList = 9FAB39151AE3E8D700E99519 /* Build configuration list for PBXNativeTarget "Server Integration Tests" */;
 			buildPhases = (
-				CA9B6923E19D03CE22309687 /* Check Pods Manifest.lock */,
 				9FAB39081AE3E8D700E99519 /* Sources */,
 				9FAB39091AE3E8D700E99519 /* Frameworks */,
 				9FAB390A1AE3E8D700E99519 /* Resources */,
-				67E563B85253426550676FD3 /* Copy Pods Resources */,
-				E1A7B6EE9EFE281770010C15 /* Embed Pods Frameworks */,
+				9F2A96181B19AC6E00DE99CC /* Copy Dependencies */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				9FAB39141AE3E8D700E99519 /* PBXTargetDependency */,
 			);
-			name = ServerIntegrationTests;
+			name = "Server Integration Tests";
 			productName = MeteorServerIntegrationTests;
-			productReference = 9FAB390C1AE3E8D700E99519 /* ServerIntegrationTests.xctest */;
+			productReference = 9FAB390C1AE3E8D700E99519 /* Server Integration Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -810,6 +870,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Meteor;
 				TargetAttributes = {
+					9F1EEB8C1B0357AF00402BFB = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 					9FAB38411AE3E76900E99519 = {
 						CreatedOnToolsVersion = 6.3;
 					};
@@ -833,9 +896,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FAB38411AE3E76900E99519 /* Meteor */,
-				9FAB38FB1AE3E8C000E99519 /* UnitTests */,
-				9FAB390B1AE3E8D700E99519 /* ServerIntegrationTests */,
+				9FAB38411AE3E76900E99519 /* Meteor iOS */,
+				9FAB38FB1AE3E8C000E99519 /* Unit Tests */,
+				9FAB390B1AE3E8D700E99519 /* Server Integration Tests */,
+				9F1EEB8C1B0357AF00402BFB /* API Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -865,139 +929,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1CBDB950EF6567F9B6EF0C4A /* Embed Pods Frameworks */ = {
+		9F1EEB901B0357B800402BFB /* Build API Documentation */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "Build API Documentation";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "export PATH=\"/usr/local/var/rbenv/shims:${PATH}\"\n\nOUTPUT_DIR=\"${BUILT_PRODUCTS_DIR}/Documentation\"\nVERSION=$(<VERSION)\nPUBLIC_HEADER_FILES=$($PROJECT_DIR/Scripts/find_headers.rb --project Meteor --target \"Meteor iOS\" --public)\n\n/usr/local/bin/appledoc \\\n--clean-output \\\n--project-version VERSION \\\n--exit-threshold 2 \\\n--create-html \\\n--no-create-docset \\\n--no-install-docset \\\n--output $OUTPUT_DIR \\\n\"${PROJECT_DIR}/Documentation/AppledocSettings.plist\" \\\n$PUBLIC_HEADER_FILES\n\nopen \"${OUTPUT_DIR}/html/index.html\"";
 		};
-		1F3E0CABFE406D499D7523B5 /* Copy Pods Resources */ = {
+		9F2A9D761B2C9313002DD57A /* Set Version */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "Set Version";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		558FDDDA1FAE7BF4904AE20E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		67E563B85253426550676FD3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A0C207428B39C72D0D54552 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9426F64E402A1C276882DB88 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CA9B6923E19D03CE22309687 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		D1A51D8417412F6B45A9A2AB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E1A7B6EE9EFE281770010C15 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = ./Scripts/set_version.sh;
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1104,17 +1062,31 @@
 /* Begin PBXTargetDependency section */
 		9FAB39041AE3E8C000E99519 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FAB38411AE3E76900E99519 /* Meteor */;
+			target = 9FAB38411AE3E76900E99519 /* Meteor iOS */;
 			targetProxy = 9FAB39031AE3E8C000E99519 /* PBXContainerItemProxy */;
 		};
 		9FAB39141AE3E8D700E99519 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FAB38411AE3E76900E99519 /* Meteor */;
+			target = 9FAB38411AE3E76900E99519 /* Meteor iOS */;
 			targetProxy = 9FAB39131AE3E8D700E99519 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9F1EEB8E1B0357AF00402BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F1EEB8F1B0357AF00402BFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9FAB38561AE3E76900E99519 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1134,7 +1106,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1152,7 +1123,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1181,7 +1152,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1193,7 +1163,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1205,51 +1175,60 @@
 		};
 		9FAB38591AE3E76900E99519 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 680F33B23EA3DFB57556B9E1 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Meteor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Meteor;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9FAB385A1AE3E76900E99519 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93A9AB9B9A1C2A6DD78B761B /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Meteor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Meteor;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		9FAB39061AE3E8C000E99519 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FC184851AE6A67100DEFBE7 /* Pods-UnitTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
+				INFOPLIST_FILE = "Tests/Unit Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1258,15 +1237,15 @@
 		};
 		9FAB39071AE3E8C000E99519 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FC184861AE6A67100DEFBE7 /* Pods-UnitTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Tests/UnitTests/Info.plist;
+				INFOPLIST_FILE = "Tests/Unit Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1275,19 +1254,19 @@
 		};
 		9FAB39161AE3E8D700E99519 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 680F33B23EA3DFB57556B9E1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/ServerIntegrationTests/Info.plist;
+				INFOPLIST_FILE = "Tests/Server Integration Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1296,15 +1275,15 @@
 		};
 		9FAB39171AE3E8D700E99519 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93A9AB9B9A1C2A6DD78B761B /* Pods.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = NO;
 				CLANG_MODULES_AUTOLINK = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Tests/ServerIntegrationTests/Info.plist;
+				INFOPLIST_FILE = "Tests/Server Integration Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1314,6 +1293,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9F1EEB8D1B0357AF00402BFB /* Build configuration list for PBXAggregateTarget "API Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F1EEB8E1B0357AF00402BFB /* Debug */,
+				9F1EEB8F1B0357AF00402BFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9FAB383C1AE3E76900E99519 /* Build configuration list for PBXProject "Meteor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1323,7 +1311,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FAB38581AE3E76900E99519 /* Build configuration list for PBXNativeTarget "Meteor" */ = {
+		9FAB38581AE3E76900E99519 /* Build configuration list for PBXNativeTarget "Meteor iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FAB38591AE3E76900E99519 /* Debug */,
@@ -1332,7 +1320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FAB39051AE3E8C000E99519 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+		9FAB39051AE3E8C000E99519 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FAB39061AE3E8C000E99519 /* Debug */,
@@ -1341,7 +1329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FAB39151AE3E8D700E99519 /* Build configuration list for PBXNativeTarget "ServerIntegrationTests" */ = {
+		9FAB39151AE3E8D700E99519 /* Build configuration list for PBXNativeTarget "Server Integration Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9FAB39161AE3E8D700E99519 /* Debug */,
