@@ -7,14 +7,16 @@
    <FileRef
       location = "group:Meteor.xcodeproj">
    </FileRef>
-   <Group
-      location = "container:"
-      name = "Examples">
-      <FileRef
-         location = "group:Examples/Todos/Todos.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:Examples/Leaderboard/Leaderboard.xcodeproj">
-      </FileRef>
-   </Group>
+   <FileRef
+      location = "group:Examples/Leaderboard/Leaderboard.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/MeteorOSX/MeteorOSX.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Examples/Todos/Todos.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

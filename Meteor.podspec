@@ -23,5 +23,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'PocketSocket'
   s.dependency 'InflectorKit'
+  s.dependency 'SimpleKeychain'
 
 end
