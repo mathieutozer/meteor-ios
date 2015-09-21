@@ -43,7 +43,7 @@
 
 - (void)signUpWithEmail:(NSString *)email password:(NSString *)password profile:(NSDictionary *)profile completionHandler:(METLogInCompletionHandler)completionHandler {
   NSArray *parameters = @[[self parametersForCreateUserMethodFromEmail:email password:password profile:profile]];
-  [self loginWithMethodName:@"createUser" parameters:parameters completionHandler:completionHandler];
+  [self loginWithMethodName:@"createUser__orion_bypass_issue_288" parameters:parameters completionHandler:completionHandler];
 }
 
 #pragma mark - Helper Methods

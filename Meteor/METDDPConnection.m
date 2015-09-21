@@ -25,6 +25,7 @@
 #import "METEJSONSerialization.h"
 
 NS_INLINE BOOL METShouldLogDDPMessages() {
+  return YES;
   return [[NSUserDefaults standardUserDefaults] boolForKey:@"METShouldLogDDPMessages"];
 }
 
@@ -69,7 +70,7 @@ NS_INLINE BOOL METShouldLogDDPMessages() {
 }
 
 - (void)sendMessage:(NSDictionary *)message {
-  NSAssert(self.open, @"Attempting to send message without an open connection");
+  //NSAssert(self.open, @"Attempting to send message without an open connection");
   
   NSError *error;
   message = [message mutableCopy];
