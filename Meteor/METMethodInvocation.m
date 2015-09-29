@@ -137,7 +137,7 @@
   copy.methodID = _methodID;
   copy.methodName = _methodName;
   copy.parameters = _parameters;
-  NSLog(@"message params %@", _parameters);
+//  NSLog(@"message params %@", _parameters);
   copy.randomSeed = _randomSeed;
   copy.barrier = _barrier;
   copy.receivedResultHandler = _receivedResultHandler;

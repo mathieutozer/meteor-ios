@@ -230,7 +230,7 @@ NSString * const METIncrementalStoreObjectsDidChangeNotification = @"METIncremen
       }
     }
   }
-  
+
   return values;
 }
 

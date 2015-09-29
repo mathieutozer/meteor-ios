@@ -25,7 +25,7 @@
 #import "METEJSONSerialization.h"
 
 NS_INLINE BOOL METShouldLogDDPMessages() {
-  return YES;
+  return NO;
   return [[NSUserDefaults standardUserDefaults] boolForKey:@"METShouldLogDDPMessages"];
 }
 

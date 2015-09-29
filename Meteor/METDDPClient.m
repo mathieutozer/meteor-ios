@@ -263,6 +263,7 @@ NSString * const METDDPClientDidChangeAccountNotification = @"METDDPClientDidCha
 }
 
 - (void)connection:(METDDPConnection *)connection didFailWithError:(NSError *)error {
+  NSLog(@"Connection Failed: %@", error);
   [self possiblyReconnect];
 }
 
