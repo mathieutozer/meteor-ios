@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "Meteor"
   s.version      = `agvtool what-marketing-version -terse1`
-  s.summary      = "Meteor for iOS and OS X."
+  s.summary      = "Meteor iOS and OS X."
   s.description  = <<-DESC
     Meteor iOS integrates native iOS apps with the Meteor platform through DDP.
     DESC
@@ -20,8 +20,7 @@ Pod::Spec.new do |s|
 
 	s.frameworks = 'CoreData'
 
-  s.dependency 'PocketSocket'
+  s.dependency 'PocketSocket', '~> 0.6.4'
   s.dependency 'InflectorKit'
   s.dependency 'SimpleKeychain'
-
 end
